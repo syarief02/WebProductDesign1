@@ -2,57 +2,218 @@
 <html>
 <head>
     <title>Your Forex Expert Advisor</title>
-    
-            <link rel="stylesheet" href="styles.css"> 
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        
+        header {
+            background-color: #24292e;
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #1e88e5;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #1565c0;
+        }
+
+        .features {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .feature {
+            margin: 20px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #f7f7f7;
+        }
+
+        .testimonial-text {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .pricing {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #24292e;
+            color: #fff;
+        }
+
+        .plan {
+            margin: 20px;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #333;
+        }
+
+        .plan h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .buy-button {
+            background-color: #1e88e5;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #1565c0;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #f7f7f7;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        .email-link {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .email-link:hover {
+            color: #1565c0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #24292e;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to [Your Expert Advisor Name]</h1>
-        <p>Your solution for successful Forex trading</p>
+        <h1>Your Forex Expert Advisor</h1>
+        <p>Your Path to Successful Forex Trading</p>
+        <button class="cta-button">Get Started</button>
     </header>
-    
-    <section class="features">
-        <h2>Why Choose [Your Expert Advisor]?</h2>
-        <ul>
-            <li>Real-time analysis and trading</li>
-            <li>Highly accurate predictions</li>
-            <li>24/7 support and updates</li>
-            <li>Customizable risk management</li>
-        </ul>
-    </section>
-    
-    <section class="testimonial">
-        <h2>What Our Customers Say</h2>
-        <blockquote>
-            "Using [Your Expert Advisor] completely transformed my trading strategy. I've seen consistent profits ever since." - John D.
-        </blockquote>
-    </section>
-    
-    <section class="pricing">
-        <h2>Choose Your Plan</h2>
+
+    <div class="features">
+        <div class="feature">
+            <h2>Real-Time Analysis</h2>
+            <p>Stay ahead of market trends with real-time analysis and predictions.</p>
+        </div>
+        <div class="feature">
+            <h2>High Accuracy</h2>
+            <p>Our expert advisor provides highly accurate trading signals for consistent profits.</p>
+        </div>
+        <div class="feature">
+            <h2>24/7 Support</h2>
+            <p>We offer round-the-clock customer support to assist you at any time.</p>
+        </div>
+        <div class="feature">
+            <h2>Customizable Risk Management</h2>
+            <p>Adjust risk settings to match your trading strategy and risk tolerance.</p>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p class="testimonial-text">"Using Your Expert Advisor transformed my trading strategy. I've seen consistent profits ever since."</p>
+        <p class="testimonial-author">John D.</p>
+    </div>
+
+    <div class="pricing">
         <div class="plan">
             <h3>Basic Plan</h3>
             <p>Perfect for beginners</p>
-            <p class="price">$99</p>
-            <button>Buy Now</button>
+            <p class="price">$99<span>/month</span></p>
+            <button class="buy-button">Get Started</button>
         </div>
         <div class="plan">
             <h3>Premium Plan</h3>
             <p>Advanced features and support</p>
-            <p class="price">$199</p>
-            <button>Buy Now</button>
+            <p class="price">$199<span>/month</span></p>
+            <button class="buy-button">Get Started</button>
         </div>
-    </section>
-    
-    <section class="contact">
-        <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact">
         <p>Have questions? Reach out to our friendly support team:</p>
-        <a href="mailto:support@yourexpertadvisor.com">support@yourexpertadvisor.com</a>
-    </section>
-    
+        <a class="email-link" href="mailto:support@yourexpertadvisor.com">support@yourexpertadvisor.com</a>
+    </div>
+
     <footer>
-        <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+        <p>&copy; 2023 Your Forex Expert Advisor. All rights reserved.</p>
     </footer>
 </body>
 </html>
